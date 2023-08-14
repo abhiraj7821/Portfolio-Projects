@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
+}
+.navContainer{
+    
+    padding: 10px;
+    background: #eaf1fc;
+    border-radius: 12px;
+}
+#navList{
+    list-style: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* font-size: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navLogo{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+a{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    padding: 20px;
+    text-decoration: none
+}
+.footerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: #eaf1fc;
+    border-radius: 12px;
+
+}
+#footerText{
+    color: black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    padding: 30px;
+    width: 70%;
+    margin: 20px;
+    border-radius: 50px;
+    background-color:black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftbox h1{
+    padding: 10px;
+    font-size: 26px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(222, 255, 221);
+
+}
+#leftbox ol,ul{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    font-family:monospace;
+    color: rgb(255, 215, 215);
+}
+#cupImage{
+    border-radius: 20px;
+    width: 30em;
+    height: 40em;
+    transition: all 1s linear 0s;
+    box-shadow: 0px 4px 1px white;
+}
+#cupImage:hover{
+    transform: scale(1.02);
+}
+
+
