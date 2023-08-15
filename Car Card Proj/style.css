@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(9, 10, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    position: relative;
+
+    transition: all 1s ease 0s;
+    
+}
+
+.box:hover{
+    transform: scale(1.02);
+    
+    
+}
+
+.box:hover > .overlayContent{
+    opacity: 1;
+}
+
+.box:hover > .carName > #name > span {
+
+    color: white;
+    
+}
+
+#img{
+    width: 33rem;
+    height: 45rem;
+    border-radius: 30px;
+}
+
+#img:hover{
+    box-shadow: 0px 1px 2px white;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: end;
+}
+
+#socialBox{
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: fit-content;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.socialIcons #socialBox svg{
+    margin: 7px;
+    height: 1.5rem;
+
+}
+
+.carName{
+    position: absolute;
+    display: flex;
+    align-items: end;
+    margin-top: 15%;
+    margin-left: 30px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.carName #name span{
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.5s ease-in 0s;
+
+}
+
+.overlayContent{
+    opacity: 0;
+    margin-top: 98%;
+    position: absolute;
+    padding: 20px;
+    text-align: justify;
+
+    transition: all 1s ease-in 0s;
+}
+
+
+.overlayContent p{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.overlayContent #seeMoreButton{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.overlayContent #seeMoreButton button{
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    background-color: #ffffff00;
+    border: 2px solid white;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
