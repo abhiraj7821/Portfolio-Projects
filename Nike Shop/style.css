@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    background-color: #cfe2e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin: 30px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 100px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 50px;
+}
+.hr-lines:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: rgb(0, 0, 0);
+  }
+.hr-lines{
+    position: relative;
+    max-width: 50px;
+    margin: -15px auto;
+    margin-left: 80px;
+}
+#shop-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight:500;
+}
+.box #main{
+   padding-left: 50px;
+}
+.mainBox{
+    display: flex;
+    flex-wrap:wrap;
+}
+.itemCard{
+    border-radius: 30px;
+    min-width: 20em;
+    height:22.5em;
+    background:#E3F8FD;
+    position: relative;
+    margin-top: 13%;
+    width: 2rem;
+    margin-right: 5%;
+}
+img{
+    position: absolute;
+    border-radius: 30px;
+    width:20em; 
+    height:24em;
+    transition: all 1s ease 0s;
+}
+#pink{
+    background-color: #FCE8DF;
+}
+img:hover{
+    transform: rotate(-17deg);
+}
+.itemCard:hover >.prodNameBox > #prodName{
+    opacity: 1;
+}
+
+.prodNameBox{
+    height: 100%;
+}
+
+.itemCard .prodNameBox #prodName{
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    text-align: center;
+    opacity: 0;
+    border-top-right-radius: 30px;
+    border-end-end-radius: 30px;
+    color: white;
+    background-color: black;
+    max-width: 2em;
+    height: 100%;
+    transition: all 1s ease 0s;
+}
+
+.itemCard:hover > .shopTerm {
+    opacity: 1;
+}
+
+.shopTerm{
+    opacity: 0;
+    display: flex;
+    margin-top: -2.2rem;
+    justify-content: center;
+    transition: all 1s ease 0s;
+}
+.shopTerm #cutprice{
+    text-decoration: line-through;
+    color: red;
+    margin-top: -17px;
+    font-weight: 550;
+}
+.shopTerm #actualPrice{
+    font-weight: 550;
+}
+.shopTerm i{
+    font-weight: 550;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
